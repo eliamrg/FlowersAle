@@ -14,16 +14,15 @@
       --aroCorazon: rgb(255, 255, 255);
       --luzFlor1: #c793f8;
       --luzFlor2:#8538eb;
+      --MostrarMensaje: none;
     }
-    :Mensaje{
-    --MostrarMensaje: none;    
-    }
+    
   </style>
 
   <script>
     // Get the root element
     var r = document.querySelector(':root');
-    var m = document.querySelector(':Mensaje');
+    var r = document.querySelector(':Mensaje');
 
 
     function myFunction_set() {
@@ -49,7 +48,7 @@
         r.style.setProperty('--aroCorazon', '#ffc0cb'); // rosa pastel para aro de corazón
         r.style.setProperty('--luzFlor1', '#ffd1dc'); // rosa pastel oscuro
         r.style.setProperty('--luzFlor2', '#ffe4e1'); // rosa pastel claro
-        m.style.setProperty('--MostrarMensaje:', 'block');
+        r.style.setProperty('--MostrarMensaje:', 'block');
       }
       else if ((mes === 3 && dia >=1) || (mes === 4) || (mes === 5) || (mes === 6 && dia < 21)) {
         //PRIMAVERA
@@ -102,7 +101,7 @@
 <!-- partial:index.partial.html -->
 <body class="container">
   <div class="night"></div>
-  <div> <p>Te amo Mucho Amor <br>1 Agosto Día de la Novia</p></div>
+  <div class="mensaje"> <p>Te amo Mucho Amor <br>1 Agosto Día de la Novia</p></div>
   <div class="flowers">
     <div class="flower flower--1">
       <div class="flower__leafs flower__leafs--1">
