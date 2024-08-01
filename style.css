@@ -62,7 +62,21 @@ body {
   position: relative;
   transform: scale(0.9);
 }
-
+.made-with-love {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 15PX;
+    text-align: center;
+    font-size: 10px;
+    z-index: 9999;
+    font-family: arial;
+    color: #e06ae0;
+    font-weight: 600;
+}
+.yellow-flower {
+    color: yellow;
+}
 .flower {
   position: absolute;
   bottom: 10vmin;
